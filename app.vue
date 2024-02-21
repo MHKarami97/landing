@@ -1,28 +1,30 @@
 <script setup lang="ts">
 useHead({
   meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    {name: 'viewport', content: 'width=device-width, initial-scale=1'}
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' }
+    {rel: 'icon', href: '/favicon.ico'}
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: 'fa'
   }
 })
 
 useSeoMeta({
-  ogSiteName: 'Nuxt UI Pro - Landing template',
+  ogSiteName: 'school',
   twitterCard: 'summary_large_image'
 })
 </script>
 
 <template>
-  <Header />
+  <div dir="rtl">
+    <Header/>
 
-  <UMain>
-    <NuxtPage />
-  </UMain>
+    <UMain>
+      <NuxtPage/>
+    </UMain>
 
-  <Footer />
+    <Footer/>
+  </div>
 </template>

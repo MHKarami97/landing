@@ -30,7 +30,7 @@ defineOgImage({
         </UBadge>
       </template>
 
-      <Placeholder />
+<!--      <Placeholder />-->
 
       <ULandingLogos :title="page.logos.title" align="center">
         <UIcon v-for="icon in page.logos.icons" :key="icon" :name="icon" class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white" />

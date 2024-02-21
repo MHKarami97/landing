@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    baseURL: '/',
+    buildAssetsDir: 'assets',
+  },
   extends: ['@nuxt/ui-pro'],
   modules: [
     '@nuxt/content',
@@ -8,19 +12,11 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     'nuxt-og-image'
   ],
+  colorMode: {
+    preference: 'light'
+  },
   ui: {
     icons: ['heroicons', 'simple-icons']
-  },
-  // Fonts
-  fontMetrics: {
-    fonts: ['DM Sans']
-  },
-  googleFonts: {
-    display: 'swap',
-    download: true,
-    families: {
-      'DM+Sans': [400, 500, 600, 700]
-    }
   },
   devtools: {
     enabled: true

@@ -5,8 +5,11 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       fontFamily: {
-        sans: ['DM Sans', 'DM Sans fallback', ...defaultTheme.fontFamily.sans]
+        sans: ['IRANSans', 'IRANSans', ...defaultTheme.fontFamily.sans]
       }
     }
-  }
+  },
+  plugins: [
+    require('tailwindcss-rtl')
+  ]
 }

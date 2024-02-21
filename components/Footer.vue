@@ -1,36 +1,34 @@
 <script setup lang="ts">
 const links = [{
-  label: 'Resources',
+  label: 'منابع',
   children: [{
-    label: 'Help center'
+    label: 'راهنمایی'
   }, {
-    label: 'Docs'
+    label: 'سوالات'
   }, {
-    label: 'Roadmap'
+    label: 'روش'
   }, {
-    label: 'Changelog'
+    label: 'تغییرات'
   }]
 }, {
-  label: 'Features',
+  label: 'ویژگی',
   children: [{
-    label: 'Affiliates'
+    label: 'شرکتها'
   }, {
-    label: 'Portal'
+    label: 'پورتال'
   }, {
-    label: 'Jobs'
+    label: 'جذب'
   }, {
-    label: 'Sponsors'
+    label: 'اسپانسر'
   }]
 }, {
-  label: 'Company',
+  label: 'شرکت',
   children: [{
-    label: 'About'
+    label: 'درباره'
   }, {
-    label: 'Pricing'
+    label: 'قیمت'
   }, {
-    label: 'Careers'
-  }, {
-    label: 'Blog'
+    label: 'وبلاگ'
   }]
 }]
 
@@ -39,13 +37,13 @@ const toast = useToast()
 const email = ref('')
 const loading = ref(false)
 
-function onSubmit () {
+function onSubmit() {
   loading.value = true
 
   setTimeout(() => {
     toast.add({
-      title: 'Subscribed!',
-      description: 'You\'ve been subscribed to our newsletter.'
+      title: 'عضو شدید!',
+      description: 'شما در خبرنامه عضو شدید'
     })
 
     loading.value = false
@@ -59,10 +57,10 @@ function onSubmit () {
       <UFooterColumns :links="links">
         <template #right>
           <form @submit.prevent="onSubmit">
-            <UFormGroup label="Subscribe to our newsletter" :ui="{ container: 'mt-3' }">
-              <UInput v-model="email" type="email" placeholder="Enter your email" :ui="{ icon: { trailing: { pointer: '' } } }" required size="xl" autocomplete="off" class="max-w-sm">
+            <UFormGroup label="برای دریافت آخرین اخبار و تخفیفها در خبرنامه عضو شوید" :ui="{ container: 'mt-3' }">
+              <UInput v-model="email" type="email" placeholder="ایمیل شما" :ui="{ icon: { trailing: { pointer: '' } } }" required size="xl" autocomplete="off" class="max-w-sm">
                 <template #trailing>
-                  <UButton type="submit" size="xs" :label="loading ? 'Subscribing' : 'Subscribe'" :loading="loading" />
+                  <UButton type="submit" size="xs" :label="loading ? 'در حال عضویت' : 'عضویت'" :loading="loading"/>
                 </template>
               </UInput>
             </UFormGroup>
@@ -73,14 +71,14 @@ function onSubmit () {
 
     <template #left>
       <p class="text-gray-500 dark:text-gray-400 text-sm">
-        Copyright © {{ new Date().getFullYear() }}. All rights reserved.
+         تمام حقوق محفوظ است Copyright © {{ new Date().getFullYear() }}
       </p>
     </template>
 
     <template #right>
-      <UColorModeButton size="sm" />
+      <UColorModeButton size="sm"/>
 
-      <UButton to="https://github.com/nuxt-ui-pro/landing" target="_blank" icon="i-simple-icons-github" aria-label="GitHub" color="gray" variant="ghost" />
+      <UButton to="https://mhkarami97.ir" target="_blank" icon="i-simple-icons-github" aria-label="Mhkarami97" color="gray" variant="ghost"/>
     </template>
   </UFooter>
 </template>

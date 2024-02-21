@@ -1,24 +1,47 @@
-# Nuxt dev/build outputs
-.output
-.data
-.nuxt
-.nitro
-.cache
-dist
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Node dependencies
-node_modules
+# compiled output
+/dist
+/tmp
 
-# Logs
-logs
-*.log
+# dependencies
+/node_modules
+/bower_components
 
-# Misc
+# IDEs and editors
+/.idea
+.project
+.classpath
+*.launch
+.settings/
+.vs/
+obj/
+bin/
+
+# misc
+/.angular/cache
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+package-lock.json
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+#System Files
 .DS_Store
-.fleet
-.idea
+Thumbs.db
 
-# Local env files
-.env
-.env.*
-!.env.example
+node_modules
+*.log
+.nuxt
+nuxt.d.ts
+.output
+
+sw.*

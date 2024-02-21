@@ -1,0 +1,153 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="..\.env">
+        <Link>.env</Link>
+      </Content>
+      <Content Include="..\.eslintignore">
+        <Link>.eslintignore</Link>
+      </Content>
+      <Content Include="..\.eslintrc.cjs">
+        <Link>.eslintrc.cjs</Link>
+      </Content>
+      <Content Include="..\.gitignore">
+        <Link>.gitignore</Link>
+      </Content>
+      <Content Include="..\.nojekyll">
+        <Link>.nojekyll</Link>
+      </Content>
+      <Content Include="..\.npmrc">
+        <Link>.npmrc</Link>
+      </Content>
+      <Content Include="..\app.vue">
+        <Link>app.vue</Link>
+      </Content>
+      <Content Include="..\assets\css\main.css">
+        <Link>assets\css\main.css</Link>
+      </Content>
+      <Content Include="..\assets\fonts\fonts-iransans.css">
+        <Link>assets\fonts\fonts-iransans.css</Link>
+      </Content>
+      <Content Include="..\assets\fonts\fonts-iransans.min.css">
+        <Link>assets\fonts\fonts-iransans.min.css</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\eot\IRANSansWeb.eot">
+        <Link>assets\fonts\IranSansWeb\eot\IRANSansWeb.eot</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\eot\IRANSansWeb_Bold.eot">
+        <Link>assets\fonts\IranSansWeb\eot\IRANSansWeb_Bold.eot</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\eot\IRANSansWeb_Light.eot">
+        <Link>assets\fonts\IranSansWeb\eot\IRANSansWeb_Light.eot</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\eot\IRANSansWeb_Medium.eot">
+        <Link>assets\fonts\IranSansWeb\eot\IRANSansWeb_Medium.eot</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\eot\IRANSansWeb_UltraLight.eot">
+        <Link>assets\fonts\IranSansWeb\eot\IRANSansWeb_UltraLight.eot</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\ttf\IRANSansWeb.ttf">
+        <Link>assets\fonts\IranSansWeb\ttf\IRANSansWeb.ttf</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\ttf\IRANSansWeb_Bold.ttf">
+        <Link>assets\fonts\IranSansWeb\ttf\IRANSansWeb_Bold.ttf</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\ttf\IRANSansWeb_Light.ttf">
+        <Link>assets\fonts\IranSansWeb\ttf\IRANSansWeb_Light.ttf</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\ttf\IRANSansWeb_Medium.ttf">
+        <Link>assets\fonts\IranSansWeb\ttf\IRANSansWeb_Medium.ttf</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\ttf\IRANSansWeb_UltraLight.ttf">
+        <Link>assets\fonts\IranSansWeb\ttf\IRANSansWeb_UltraLight.ttf</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\woff2\IRANSansWeb.woff2">
+        <Link>assets\fonts\IranSansWeb\woff2\IRANSansWeb.woff2</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\woff2\IRANSansWeb_Bold.woff2">
+        <Link>assets\fonts\IranSansWeb\woff2\IRANSansWeb_Bold.woff2</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\woff2\IRANSansWeb_Light.woff2">
+        <Link>assets\fonts\IranSansWeb\woff2\IRANSansWeb_Light.woff2</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\woff2\IRANSansWeb_Medium.woff2">
+        <Link>assets\fonts\IranSansWeb\woff2\IRANSansWeb_Medium.woff2</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\woff2\IRANSansWeb_UltraLight.woff2">
+        <Link>assets\fonts\IranSansWeb\woff2\IRANSansWeb_UltraLight.woff2</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\woff\IRANSansWeb.woff">
+        <Link>assets\fonts\IranSansWeb\woff\IRANSansWeb.woff</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\woff\IRANSansWeb_Bold.woff">
+        <Link>assets\fonts\IranSansWeb\woff\IRANSansWeb_Bold.woff</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\woff\IRANSansWeb_Light.woff">
+        <Link>assets\fonts\IranSansWeb\woff\IRANSansWeb_Light.woff</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\woff\IRANSansWeb_Medium.woff">
+        <Link>assets\fonts\IranSansWeb\woff\IRANSansWeb_Medium.woff</Link>
+      </Content>
+      <Content Include="..\assets\fonts\IranSansWeb\woff\IRANSansWeb_UltraLight.woff">
+        <Link>assets\fonts\IranSansWeb\woff\IRANSansWeb_UltraLight.woff</Link>
+      </Content>
+      <Content Include="..\components\Footer.vue">
+        <Link>components\Footer.vue</Link>
+      </Content>
+      <Content Include="..\components\Header.vue">
+        <Link>components\Header.vue</Link>
+      </Content>
+      <Content Include="..\components\OgImage\OgImageLanding.vue">
+        <Link>components\OgImage\OgImageLanding.vue</Link>
+      </Content>
+      <Content Include="..\components\Placeholder.vue">
+        <Link>components\Placeholder.vue</Link>
+      </Content>
+      <Content Include="..\content\index.yml">
+        <Link>content\index.yml</Link>
+      </Content>
+      <Content Include="..\package.json">
+        <Link>package.json</Link>
+      </Content>
+      <Content Include="..\pages\index.vue">
+        <Link>pages\index.vue</Link>
+      </Content>
+      <Content Include="..\public\favicon.ico">
+        <Link>public\favicon.ico</Link>
+      </Content>
+      <Content Include="..\README.md">
+        <Link>README.md</Link>
+      </Content>
+      <Content Include="..\renovate.json">
+        <Link>renovate.json</Link>
+      </Content>
+      <Content Include="..\server\tsconfig.json">
+        <Link>server\tsconfig.json</Link>
+      </Content>
+      <Content Include="..\tsconfig.json">
+        <Link>tsconfig.json</Link>
+      </Content>
+      <Content Include="..\yarn.lock">
+        <Link>yarn.lock</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <TypeScriptCompile Include="..\app.config.ts">
+        <Link>app.config.ts</Link>
+      </TypeScriptCompile>
+      <TypeScriptCompile Include="..\nuxt.config.ts">
+        <Link>nuxt.config.ts</Link>
+      </TypeScriptCompile>
+      <TypeScriptCompile Include="..\tailwind.config.ts">
+        <Link>tailwind.config.ts</Link>
+      </TypeScriptCompile>
+    </ItemGroup>
+
+</Project>
