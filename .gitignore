@@ -45,3 +45,5 @@ nuxt.d.ts
 .output
 
 sw.*
+
+!node_modules/@nuxt/ui-pro/modules/pro/license.ts
